@@ -49,11 +49,49 @@ nav a:hover {
 }
 
 .hero {
-    background: url('hero.jpg') no-repeat center center/cover; /* Substitua pelo caminho da imagem */
     color: #fff;
     text-align: center;
     padding: 10em 2em;
     position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.carousel-images img {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.progress-bar-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #FF03D7;
+    transition: width 5s linear;
 }
 
 .hero .content {
