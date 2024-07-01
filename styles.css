@@ -87,7 +87,7 @@ nav a:hover {
 
 .section.parallax::before {
     content: '';
-    background: url('parallax.jpg') no-repeat center center/cover; /* Substitua pelo caminho da sua imagem parallax */
+    background: url('assets/test.png') no-repeat center center/cover; /* Substitua pelo caminho da sua imagem parallax */
     position: absolute;
     top: 0;
     left: 0;
